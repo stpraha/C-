@@ -1,0 +1,86 @@
+#include"body.h"
+
+void body1(int i,int j)//画人
+{
+	circle(i,j,20);
+	moveto(i-10,j+16);
+	lineto(i-10,j+24);
+	moveto(i+10,j+16);
+	lineto(i+10,j+24);
+	lineto(i-10,j+24);
+	lineto(i-23,j+25);
+	lineto(i-73,j+85);
+	lineto(i-60,j+92);
+	lineto(i-23,j+50);
+	lineto(i-23,j+110);
+	lineto(i+23,j+110);
+	lineto(i+23,j+50);
+	lineto(i+26,j+50);
+	lineto(i+26,j+100);
+	lineto(i+39,j+100);
+	lineto(i+39,j+34);
+	lineto(i+20,j+24);
+	lineto(i+10,j+24);
+	moveto(i-23,j+110);
+	lineto(i-45,j+150);
+	lineto(i-23,j+180);
+	lineto(i-10,j+170);
+	lineto(i-25,j+150);
+	lineto(i,j+125);
+	lineto(i+5,j+190);
+	lineto(i+23,j+190);
+	lineto(i+23,j+110);
+	moveto(i-18,j-6);
+	lineto(i+18,j-6);
+	setfillstyle(1,RED);
+	floodfill(i,j+100,WHITE);
+	setfillstyle(1,CYAN);
+	floodfill(i,j+115,WHITE);
+	setfillstyle(1,WHITE);
+	floodfill(i,j,WHITE);
+	floodfill(i,j+21,WHITE);
+	setfillstyle(1,BROWN);
+	floodfill(i,j-7,WHITE);
+}
+void body2(int i,int j)//另一朝向的人
+{
+	circle(i,j,20);
+	moveto(i+10,j+16);
+	lineto(i+10,j+24);
+	moveto(i-10,j+16);
+	lineto(i-10,j+24);
+	lineto(i+10,j+24);
+	lineto(i+23,j+25);
+	lineto(i+73,j+85);
+	lineto(i+60,j+92);
+	lineto(i+23,j+50);
+	lineto(i+23,j+110);
+	lineto(i-23,j+110);
+	lineto(i-23,j+50);
+	lineto(i-26,j+50);
+	lineto(i-26,j+100);
+	lineto(i-39,j+100);
+	lineto(i-39,j+34);
+	lineto(i-20,j+24);
+	lineto(i-10,j+24);
+	moveto(i+23,j+110);
+	lineto(i+45,j+150);
+	lineto(i+23,j+180);
+	lineto(i+10,j+170);
+	lineto(i+25,j+150);
+	lineto(i,j+125);
+	lineto(i-5,j+190);
+	lineto(i-23,j+190);
+	lineto(i-23,j+110);
+	moveto(i+18,j-6);
+	lineto(i-18,j-6);
+	setfillstyle(1,RED);
+	floodfill(i,j+100,WHITE);
+	setfillstyle(1,CYAN);
+	floodfill(i,j+115,WHITE);
+	setfillstyle(1,WHITE);
+	floodfill(i,j,WHITE);
+	floodfill(i,j+21,WHITE);
+	setfillstyle(1,BROWN);
+	floodfill(i,j-7,WHITE);
+}
